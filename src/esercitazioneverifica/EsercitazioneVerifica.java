@@ -46,10 +46,10 @@ Creare un menu che permetta all’utente di:
         
         for (int i = 0; i < 10; i++) {
             for (int j = 0; j < stringhe[i].length()-1; j++) {
-                if(stringhe[i].charAt(j) == stringhe[i].charAt(j) && stringhe[i].charAt(j) != ' ') {
+                if(stringhe[i].charAt(j) == stringhe[i].charAt(j+1) && stringhe[i].charAt(j) != ' ') {
                     contSpazi++;
                 }
-                if(stringhe[i].charAt(j) != stringhe[i].charAt(j)) {
+                if(stringhe[i].charAt(j) != stringhe[i].charAt(j+1)) {
                     if (contSpazi == 1) {
                         contDoppie++;
                     }
